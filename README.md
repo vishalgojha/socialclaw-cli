@@ -36,7 +36,25 @@ Then restart OpenClaw so it reloads skills.
 ## Validate Skill
 
 ```powershell
-& 'C:\Users\visha\AppData\Local\Python\bin\python.exe' `
-  'C:\Users\visha\.codex\skills\.system\skill-creator\scripts\quick_validate.py' `
-  'C:\Users\visha\SocialClaw-CLI\skills\socialclaw-cli'
+./skills/socialclaw-cli/scripts/ci_validate_skill.ps1 -SkillRoot ./skills/socialclaw-cli
+./skills/socialclaw-cli/scripts/validate_examples.ps1 -SkillRoot ./skills/socialclaw-cli
+./skills/socialclaw-cli/scripts/verify_upstream_contract.ps1 -SkillRoot ./skills/socialclaw-cli -Repo vishalgojha/social-CLI -Ref main
+```
+
+## Publish to ClawHub
+
+```bash
+clawhub login --no-browser --token YOUR_TOKEN
+clawhub publish ./skills/socialclaw-cli --slug socialclaw-cli --name "SocialClaw CLI" --version 0.1.2 --tags latest --changelog "Update summary and validation guards"
+```
+
+## CI Gate
+
+This repository includes `.github/workflows/quality.yml`.
+
+It blocks regressions by validating:
+
+- required skill structure and frontmatter
+- local command examples used in references
+- upstream `social-CLI` command contract for key command signatures
 ```

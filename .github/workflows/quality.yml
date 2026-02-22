@@ -1,0 +1,29 @@
+name: Skill Quality
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate skill structure
+        shell: pwsh
+        run: |
+          ./skills/socialclaw-cli/scripts/ci_validate_skill.ps1 -SkillRoot ./skills/socialclaw-cli
+
+      - name: Validate local command examples
+        shell: pwsh
+        run: |
+          ./skills/socialclaw-cli/scripts/validate_examples.ps1 -SkillRoot ./skills/socialclaw-cli
+
+      - name: Validate upstream command contract
+        shell: pwsh
+        run: |
+          ./skills/socialclaw-cli/scripts/verify_upstream_contract.ps1 -SkillRoot ./skills/socialclaw-cli -Repo vishalgojha/social-CLI -Ref main
