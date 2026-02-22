@@ -1,12 +1,12 @@
 ---
 name: socialclaw-cli
-description: Operate Meta API workflows safely through the installed social CLI. Use when the user asks to authenticate, query, post, manage Instagram or WhatsApp, run Marketing API actions, execute ops workflows, or launch agent/gateway flows from terminal commands. Use this skill to translate natural-language requests into explicit social commands with risk-aware confirmations and troubleshooting.
+description: Run SocialClaw as an agentic control plane for Meta operations through the installed social CLI. Use when the user asks for multi-step execution, approvals, ops automation, or command generation across auth, query, post, Instagram, WhatsApp, Marketing API, agent mode, and gateway/studio workflows. Translate natural-language intents into explicit, risk-gated social commands with confirmation-aware execution.
 ---
 
 # SocialClaw CLI
 
-Use this skill to convert user intent into safe `social` commands for Meta API operations.
-Assume `social` is preinstalled, verify availability first, then route to the domain workflow.
+Use this skill to operate SocialClaw as an agentic control plane and produce safe `social` command flows.
+Assume `social` is preinstalled, verify availability first, then route to the right domain workflow.
 
 ## Core Workflow
 
