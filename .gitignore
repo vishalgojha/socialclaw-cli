@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+node_modules/
+dist/
+coverage/
+__pycache__/
+*.pyc

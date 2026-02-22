@@ -1,0 +1,4 @@
+interface:
+  display_name: "SocialClaw CLI"
+  short_description: "Safe social CLI workflows for Meta API tasks."
+  default_prompt: "Use socialclaw-cli to verify my setup, map my request to commands, and gate risky actions with confirmations."
