@@ -24,6 +24,11 @@ Install `social` CLI first:
 npm install -g @vishalgojha/social-cli
 ```
 
+Verify source before installing:
+
+- npm: `https://www.npmjs.com/package/@vishalgojha/social-cli`
+- repository: `https://github.com/vishalgojha/social-CLI`
+
 ## Install Skill Locally
 
 Copy or clone this repository, then place the skill folder in one of:
