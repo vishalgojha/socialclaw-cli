@@ -17,7 +17,6 @@ social ops alerts list --workspace clientA --open
 ```bash
 social ops morning-run --all-workspaces --spend 320
 social ops approvals list --workspace clientA --open
-social ops approvals approve <APPROVAL_ID> --workspace clientA
 ```
 
 Treat approvals as write operations because they can trigger real downstream actions.
@@ -45,7 +44,7 @@ social studio
 When security requirements are stated, include API-key and CORS options:
 
 ```bash
-social gateway --host 127.0.0.1 --port 1310 --require-api-key --api-key <KEY>
+social gateway --host 127.0.0.1 --port 1310 --require-api-key
 ```
 
 ## Multi-Profile / Team Context

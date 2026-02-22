@@ -46,10 +46,9 @@ social query custom /me/photos --fields id,name,created_time
 
 ```bash
 social post pages --set-default
-social post create --message "Hello from social-cli"
 ```
 
-If scheduling is requested, include exact date-time and timezone assumptions in plain text before proposing the command.
+If scheduling or publishing is requested, include exact date-time and timezone assumptions in plain text, then require explicit confirmation before proposing write commands.
 
 ## Instagram Workflow
 

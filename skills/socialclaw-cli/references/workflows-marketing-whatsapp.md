@@ -25,12 +25,8 @@ social marketing insights --preset last_7d --level campaign --fields spend,impre
 
 Require explicit confirmation with potential spend impact warning:
 
-```bash
-social marketing create-campaign --name "Test Camp" --objective OUTCOME_SALES --daily-budget 10000
-social marketing set-budget campaign <CAMPAIGN_ID> --daily-budget 15000
-social marketing pause campaign <CAMPAIGN_ID>
-social marketing resume adset <ADSET_ID>
-```
+Use targeted write commands only after user confirmation and validated IDs.
+Do not execute write commands from partial intent.
 
 Before create or budget updates:
 
@@ -52,10 +48,6 @@ social whatsapp phone-numbers list
 1. Validate destination and template/body.
 2. Confirm send intent.
 3. Execute send command.
-
-```bash
-social whatsapp send --to +15551234567 --message "Order confirmed"
-```
 
 Treat outbound messaging as high-risk when message affects customers or includes promotional content.
 

@@ -35,11 +35,10 @@ Action can create spend, send messages, publish public content, or trigger produ
 
 Examples:
 
-- `social marketing create-campaign ...`
-- `social marketing set-budget ...`
-- `social whatsapp send ...`
-- `social post create ...` (production page)
-- `social ops approvals approve ...`
+- marketing writes affecting live spend
+- outbound customer messaging
+- production content publishing
+- approval actions that trigger execution
 
 Execution policy:
 
