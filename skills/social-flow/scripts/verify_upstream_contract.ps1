@@ -35,10 +35,10 @@ function Assert-LocalContains([string]$File, [string]$Pattern, [string]$Message)
 
 $root = Resolve-Path $SkillRoot
 
-$instagramJs = Get-UpstreamFile "commands/instagram.js"
-$whatsappJs = Get-UpstreamFile "commands/whatsapp.js"
-$marketingJs = Get-UpstreamFile "commands/marketing.js"
-$opsJs = Get-UpstreamFile "commands/ops.js"
+$instagramJs = Get-UpstreamFile "dist-runtime/commands/instagram.js"
+$whatsappJs = Get-UpstreamFile "dist-runtime/commands/whatsapp.js"
+$marketingJs = Get-UpstreamFile "commands/marketing.ts"
+$opsJs = Get-UpstreamFile "commands/ops.ts"
 
 Assert-Contains $instagramJs ".command('accounts')" "Upstream changed: instagram accounts command not found."
 Assert-Contains $instagramJs ".command('list')" "Upstream changed: instagram list subcommand not found."
