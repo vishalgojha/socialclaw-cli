@@ -30,7 +30,7 @@ social agent --plan-only "check auth and list pages for clientA"
 social agent --scope clientA "check auth and list pages"
 ```
 
-If cloud model provider setup is requested, mention fallback planning behavior and ask the user to configure provider credentials through social-cli setup flows. Do not request raw secrets unless the user explicitly opts in.
+If cloud model provider setup is requested, mention fallback planning behavior and ask the user to configure provider credentials through Social Flow setup flows. Do not request raw secrets unless the user explicitly opts in.
 
 ## Gateway and Studio Workflow
 

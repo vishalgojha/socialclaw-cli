@@ -24,7 +24,7 @@ social <group> --help
 - Install or upgrade:
 
 ```bash
-npm install -g @vishalgojha/social-cli
+npm install -g @vishalgojha/social-flow
 ```
 
 - On Windows PowerShell, try `social.cmd --help`.

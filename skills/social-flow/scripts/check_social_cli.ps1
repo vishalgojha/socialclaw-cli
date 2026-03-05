@@ -13,7 +13,7 @@ function Parse-Version {
 
 $cmd = Get-Command social -ErrorAction SilentlyContinue
 if (-not $cmd) {
-    Write-Error "social CLI not found in PATH. Install with: npm install -g @vishalgojha/social-cli"
+    Write-Error "social CLI not found in PATH. Install with: npm install -g @vishalgojha/social-flow"
     exit 2
 }
 
@@ -38,7 +38,7 @@ if (-not $detectedVersion -or -not $minimumVersion) {
 }
 
 if ($detectedVersion -lt $minimumVersion) {
-    Write-Error "social CLI version $detected is older than required $MinVersion. Upgrade with: npm install -g @vishalgojha/social-cli"
+    Write-Error "social CLI version $detected is older than required $MinVersion. Upgrade with: npm install -g @vishalgojha/social-flow"
     exit 4
 }
 

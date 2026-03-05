@@ -1,6 +1,6 @@
 param(
     [string]$SkillRoot = ".",
-    [string]$Repo = "vishalgojha/social-CLI",
+    [string]$Repo = "vishalgojha/social-flow",
     [string]$Ref = "main"
 )
 

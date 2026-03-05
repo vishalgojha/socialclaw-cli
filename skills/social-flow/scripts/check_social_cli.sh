@@ -4,7 +4,7 @@ set -eu
 MIN_VERSION="${1:-0.2.13}"
 
 if ! command -v social >/dev/null 2>&1; then
-  echo "ERROR: social CLI not found in PATH. Install with: npm install -g @vishalgojha/social-cli" >&2
+  echo "ERROR: social CLI not found in PATH. Install with: npm install -g @vishalgojha/social-flow" >&2
   exit 2
 fi
 
@@ -37,7 +37,7 @@ version_ge() {
 }
 
 if ! version_ge "$DETECTED" "$MIN_VERSION"; then
-  echo "ERROR: social CLI version $DETECTED is older than required $MIN_VERSION. Upgrade with: npm install -g @vishalgojha/social-cli" >&2
+  echo "ERROR: social CLI version $DETECTED is older than required $MIN_VERSION. Upgrade with: npm install -g @vishalgojha/social-flow" >&2
   exit 4
 fi
 

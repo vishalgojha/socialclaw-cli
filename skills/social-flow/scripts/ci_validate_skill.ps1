@@ -42,8 +42,8 @@ if (-not $frontmatterMatch.Success) {
 }
 
 $frontmatter = $frontmatterMatch.Groups[1].Value
-if (-not [regex]::IsMatch($frontmatter, '(?m)^name:\s*socialclaw-cli\s*$')) {
-    Fail "SKILL.md frontmatter must contain `name: socialclaw-cli`."
+if (-not [regex]::IsMatch($frontmatter, '(?m)^name:\s*social-flow\s*$')) {
+    Fail "SKILL.md frontmatter must contain `name: social-flow`."
 }
 
 if (-not [regex]::IsMatch($frontmatter, '(?m)^description:\s*.+$')) {

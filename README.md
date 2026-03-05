@@ -1,10 +1,10 @@
-# SocialClaw-CLI
+# Social Flow Skill Pack
 
 OpenClaw skill package for operating the `social` CLI with safe, plan-first workflows.
 
 This repository is skill-only and packages one orchestrator skill:
 
-- `skills/socialclaw-cli`
+- `skills/social-flow`
 
 ## What It Covers
 
@@ -21,36 +21,36 @@ This repository is skill-only and packages one orchestrator skill:
 Install `social` CLI first:
 
 ```bash
-npm install -g @vishalgojha/social-cli
+npm install -g @vishalgojha/social-flow
 ```
 
 Verify source before installing:
 
-- npm: `https://www.npmjs.com/package/@vishalgojha/social-cli`
-- repository: `https://github.com/vishalgojha/social-CLI`
+- npm: `https://www.npmjs.com/package/@vishalgojha/social-flow`
+- repository: `https://github.com/vishalgojha/social-flow`
 
 ## Install Skill Locally
 
 Copy or clone this repository, then place the skill folder in one of:
 
-- Workspace skill path: `<workspace>/skills/socialclaw-cli/`
-- Global local path: `~/.openclaw/skills/socialclaw-cli/`
+- Workspace skill path: `<workspace>/skills/social-flow/`
+- Global local path: `~/.openclaw/skills/social-flow/`
 
 Then restart OpenClaw so it reloads skills.
 
 ## Validate Skill
 
 ```powershell
-./skills/socialclaw-cli/scripts/ci_validate_skill.ps1 -SkillRoot ./skills/socialclaw-cli
-./skills/socialclaw-cli/scripts/validate_examples.ps1 -SkillRoot ./skills/socialclaw-cli
-./skills/socialclaw-cli/scripts/verify_upstream_contract.ps1 -SkillRoot ./skills/socialclaw-cli -Repo vishalgojha/social-CLI -Ref main
+./skills/social-flow/scripts/ci_validate_skill.ps1 -SkillRoot ./skills/social-flow
+./skills/social-flow/scripts/validate_examples.ps1 -SkillRoot ./skills/social-flow
+./skills/social-flow/scripts/verify_upstream_contract.ps1 -SkillRoot ./skills/social-flow -Repo vishalgojha/social-flow -Ref main
 ```
 
 ## Publish to ClawHub
 
 ```bash
 clawhub login --no-browser --token YOUR_TOKEN
-clawhub publish ./skills/socialclaw-cli --slug socialclaw-cli --name "SocialClaw CLI" --version 0.1.2 --tags latest --changelog "Update summary and validation guards"
+clawhub publish ./skills/social-flow --slug socialclaw-cli --name "Social Flow" --version 0.1.3 --tags latest --changelog "Update Social Flow naming and risk-gated workflow guidance"
 ```
 
 ## CI Gate
@@ -61,5 +61,4 @@ It blocks regressions by validating:
 
 - required skill structure and frontmatter
 - local command examples used in references
-- upstream `social-CLI` command contract for key command signatures
-```
+- upstream `social-flow` command contract for key command signatures
